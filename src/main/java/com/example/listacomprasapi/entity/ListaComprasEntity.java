@@ -2,11 +2,8 @@ package com.example.listacomprasapi.entity;
 
 import com.example.listacomprasapi.model.ListaComprasModel;
 import com.example.listacomprasapi.model.emuns.ListaStatus;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -26,15 +23,15 @@ public class ListaComprasEntity {
 
     private String nome;
 
-    @ManyToMany
-    private List<ProdutoEntity> produtos;
+    @OneToMany(mappedBy = "lista", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<ListaProdutoEntity> listaProduto;
 
     private ListaStatus status;
 
     public ListaComprasEntity(ListaComprasModel model) {
         criação = new Date();
         nome = model.getNome();
-        produtos = model.getProdutos();
+        listaProduto = model.getListaProduto();
         status = ListaStatus.valueOf("aberta");
     }
 }
