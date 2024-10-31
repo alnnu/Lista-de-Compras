@@ -21,12 +21,16 @@ public class ProdutoEntity {
 
     private String descricao;
 
+    @ManyToOne
+    private IconEntity icon;
+
 @OneToMany(mappedBy = "produto")
     private List<ListaProdutoEntity> listaProduto;
 
     public ProdutoEntity(ProdutoModel produtoModel) {
         nome = produtoModel.getNome();
         descricao = produtoModel.getDescricao();
+        icon = produtoModel.getIcon();
         listaProduto = produtoModel.getListaProduto();
     }
 }

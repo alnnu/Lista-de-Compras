@@ -1,7 +1,9 @@
 package com.example.listacomprasapi.seed;
 
+import com.example.listacomprasapi.entity.IconEntity;
 import com.example.listacomprasapi.entity.ProdutoEntity;
 import com.example.listacomprasapi.model.ProdutoModel;
+import com.example.listacomprasapi.repository.IconRespository;
 import com.example.listacomprasapi.repository.ProdutoRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -20,6 +22,7 @@ import java.util.List;
 public class produtoSeed implements CommandLineRunner {
 
     private final ProdutoRepository produtoRepository;
+    private final IconRespository iconRespository;
 
 
     @Override
@@ -54,11 +57,25 @@ public class produtoSeed implements CommandLineRunner {
 
 
         ProdutoModel product = new ProdutoModel();
-        System.out.println(Arrays.toString(values));
         product.setNome(values[1]);
 
         product.setDescricao(values[2]);
 
+        IconEntity icon = iconRespository.findByNome(values[5]);
+
+        System.out.println(values[5]);
+
+        if (icon == null) {
+            icon = new IconEntity();
+            icon.setBiblioteca(values[4]);
+            icon.setNome(values[5]);
+            icon.setCor(values[6]);
+            iconRespository.save(icon);
+
+            product.setIcon(icon);
+        }else {
+            product.setIcon(icon);
+        }
 
         produtoRepository.save(new ProdutoEntity(product));
 

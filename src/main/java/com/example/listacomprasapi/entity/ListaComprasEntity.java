@@ -17,6 +17,7 @@ import java.util.List;
 public class ListaComprasEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     private Date criação;
