@@ -22,8 +22,6 @@ public class ListaComprasEntity {
 
     private Date criação;
 
-    private String nome;
-
     @OneToMany(mappedBy = "lista", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<ListaProdutoEntity> listaProduto;
 
@@ -31,7 +29,6 @@ public class ListaComprasEntity {
 
     public ListaComprasEntity(ListaComprasModel model) {
         criação = new Date();
-        nome = model.getNome();
         listaProduto = model.getListaProduto();
         status = ListaStatus.valueOf("aberta");
     }

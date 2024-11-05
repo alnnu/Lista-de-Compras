@@ -22,11 +22,8 @@ public class ProdutoModel {
 
     private IconEntity icon;
 
-
     @JsonIgnore
     private List<ListaProdutoEntity> listaProduto;
-
-
 
     public ProdutoModel(ProdutoEntity entity) {
         this.id = entity.getId();

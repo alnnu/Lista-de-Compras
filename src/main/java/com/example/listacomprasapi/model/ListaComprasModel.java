@@ -18,14 +18,13 @@ public class ListaComprasModel {
 
     private Date criação;
 
-    private String nome;
 
     private List<ListaProdutoEntity> listaProduto;
 
     private ListaStatus status;
 
     public ListaComprasModel(ListaComprasEntity entity) {
-        nome = entity.getNome();
+        criação = entity.getCriação();
         listaProduto = entity.getListaProduto();
         status = entity.getStatus();
     }

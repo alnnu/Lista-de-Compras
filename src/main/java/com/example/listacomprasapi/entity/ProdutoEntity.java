@@ -1,6 +1,7 @@
 package com.example.listacomprasapi.entity;
 
 import com.example.listacomprasapi.model.ProdutoModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,7 +25,8 @@ public class ProdutoEntity {
     @ManyToOne
     private IconEntity icon;
 
-@OneToMany(mappedBy = "produto")
+    @JsonIgnore
+    @OneToMany(mappedBy = "produto")
     private List<ListaProdutoEntity> listaProduto;
 
     public ProdutoEntity(ProdutoModel produtoModel) {

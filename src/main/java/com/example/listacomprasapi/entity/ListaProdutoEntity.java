@@ -2,6 +2,8 @@ package com.example.listacomprasapi.entity;
 
 
 import com.example.listacomprasapi.model.ListaProdutoModel;
+import com.example.listacomprasapi.model.ProdutoModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +20,7 @@ public class ListaProdutoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonIgnore
     @ManyToOne
     private ListaComprasEntity lista;
 
@@ -34,4 +37,12 @@ public class ListaProdutoEntity {
         this.produto = listaProdutoModel.getProduto();
         this.quantidade = listaProdutoModel.getQuantidade();
     }
+
+    public ListaProdutoEntity(ListaComprasEntity listaComprasEntity, ProdutoEntity produtoEntity) {
+        this.lista = listaComprasEntity;
+        this.produto = produtoEntity;
+        this.quantidade = 1;
+    }
+
+
 }
