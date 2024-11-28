@@ -15,15 +15,16 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ListaComprasModel {
+    private Long id;
 
     private Date criação;
-
 
     private List<ListaProdutoEntity> listaProduto;
 
     private ListaStatus status;
 
     public ListaComprasModel(ListaComprasEntity entity) {
+        id = entity.getId();
         criação = entity.getCriação();
         listaProduto = entity.getListaProduto();
         status = entity.getStatus();

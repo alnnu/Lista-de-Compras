@@ -23,6 +23,11 @@ public class ListaController {
         return listaService.findAll();
     }
 
+    @GetMapping("/find/aberta")
+    public ResponseEntity<ListaComprasModel> findAllaberta() {
+        return listaService.findAtiva();
+    }
+
     @GetMapping("/create")
     public ResponseEntity<?> create(@RequestBody ListaComprasModel model ) {
         return listaService.save(model);

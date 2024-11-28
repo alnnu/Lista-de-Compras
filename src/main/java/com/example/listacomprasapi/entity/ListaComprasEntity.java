@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class ListaComprasEntity {
 
     public ListaComprasEntity(ListaComprasModel model) {
         criação = new Date();
-        listaProduto = model.getListaProduto();
+        listaProduto = new ArrayList<>();
         status = ListaStatus.valueOf("aberta");
     }
 }
