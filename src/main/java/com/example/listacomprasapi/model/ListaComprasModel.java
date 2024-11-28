@@ -17,7 +17,7 @@ import java.util.List;
 public class ListaComprasModel {
     private Long id;
 
-    private Date criação;
+    private Date criacao;
 
     private List<ListaProdutoEntity> listaProduto;
 
@@ -25,7 +25,7 @@ public class ListaComprasModel {
 
     public ListaComprasModel(ListaComprasEntity entity) {
         id = entity.getId();
-        criação = entity.getCriação();
+        criacao = entity.getCriacao();
         listaProduto = entity.getListaProduto();
         status = entity.getStatus();
     }

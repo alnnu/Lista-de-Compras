@@ -21,7 +21,7 @@ public class ListaComprasEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    private Date criação;
+    private Date criacao;
 
     @OneToMany(mappedBy = "lista", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<ListaProdutoEntity> listaProduto;
@@ -29,7 +29,7 @@ public class ListaComprasEntity {
     private ListaStatus status;
 
     public ListaComprasEntity(ListaComprasModel model) {
-        criação = new Date();
+        criacao = new Date();
         listaProduto = new ArrayList<>();
         status = ListaStatus.valueOf("aberta");
     }
