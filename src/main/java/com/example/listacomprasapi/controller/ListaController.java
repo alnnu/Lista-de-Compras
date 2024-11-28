@@ -32,4 +32,9 @@ public class ListaController {
     public ResponseEntity<?> add(@RequestBody ProdutoModel model, @PathVariable Long id ) {
         return listaService.addProduto(id,model);
     }
+
+    @GetMapping("/remove/{id}")
+    public ResponseEntity<?> remove(@RequestBody ProdutoModel model, @PathVariable Long id ) {
+        return listaService.removeProduto(id,model);
+    }
 }

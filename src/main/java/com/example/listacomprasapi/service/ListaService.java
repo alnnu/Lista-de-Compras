@@ -19,5 +19,5 @@ public interface ListaService {
 
     public ResponseEntity<?> addProduto(Long listaId, ProdutoModel produtoModel);
 
-    public ResponseEntity<?> removeProduto(Long listaId, Long ProdutoId);
+    public ResponseEntity<?> removeProduto(Long listaId, ProdutoModel produtoModel);
 }

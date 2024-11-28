@@ -95,13 +95,13 @@ public class ListaServiceImp implements ListaService {
     @Override
     public ResponseEntity<?> addProduto(Long listaId, ProdutoModel produtoModel) {
         ListaComprasEntity listaComprasEntity = listaCompraRepository.findById(listaId).orElse(null);
-
+        Map<String, String> msg = new HashMap<>();
 
         if (listaComprasEntity == null) {
-            Map<String, String> errors = new HashMap<>();
 
-            errors.put("Error", "Lista Não existente");
-            return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+
+            msg.put("Error", "Lista Não existente");
+            return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
         } else {
             AtomicReference<Byte> flag = new AtomicReference<>((byte) 0);
 
@@ -117,22 +117,61 @@ public class ListaServiceImp implements ListaService {
                 }
             });
 
-
-
-
             if(flag.get() == 0){
                 listaComprasModel.getListaProduto().add(new ListaProdutoEntity(listaComprasEntity, produtoEntity));
             }
 
             listaCompraRepository.save(listaComprasEntity);
-        }
 
-        return null;
+            msg.put("msg", "produto adicionado");
+            return new ResponseEntity<>(msg, HttpStatus.OK);
+        }
     }
 
     @Override
-    public ResponseEntity<?> removeProduto(Long listaId, Long ProdutoId) {
-        return null;
+    public ResponseEntity<?> removeProduto(Long listaId, ProdutoModel produtoModel) {
+        ListaComprasEntity listaComprasEntity = listaCompraRepository.findById(listaId).orElse(null);
+        Map<String, String> msg = new HashMap<>();
+
+        if (listaComprasEntity == null) {
+
+
+            msg.put("Error", "Lista Não existente");
+            return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
+        } else {
+            byte flag = 0;
+            int index = 0;
+            ProdutoEntity produtoEntity = produtoRepository.findById(produtoModel.getId()).orElse(null);
+
+            if (produtoEntity != null) {
+                ListaComprasModel listaComprasModel = new ListaComprasModel(listaComprasEntity);
+
+
+                for(ListaProdutoEntity lista : listaComprasEntity.getListaProduto()){
+                    if (lista.getProduto().getId().equals(produtoModel.getId())) {
+                        if (lista.getQuantidade() > 1) {
+                            lista.setQuantidade(lista.getQuantidade() - 1);
+                        } else {
+                           index = listaComprasModel.getListaProduto().indexOf(lista);
+                           flag = 1;
+                        }
+                    }
+                }
+                if(flag == 1){
+
+                    listaComprasEntity.getListaProduto().remove(index);
+                }
+
+                listaCompraRepository.save(listaComprasEntity);
+
+                msg.put("msg", "produto removido ");
+                return new ResponseEntity<>(msg, HttpStatus.OK);
+            }else {
+                msg.put("Error", "Produto Não existente");
+                return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
+            }
+
+        }
     }
 
 

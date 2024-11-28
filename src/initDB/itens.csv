@@ -1,50 +1,50 @@
-1,"Arroz","Pacote de 5kg de arroz branco tipo 1.",19.90,"MaterialCommunityIcons","rice","#FFD700"
-2,"Feijão","Pacote de 1kg de feijão carioca.",7.50,"MaterialCommunityIcons","seed","#8B4513"
-3,"Macarrão","Pacote de 500g de macarrão espaguete.",4.20,"MaterialCommunityIcons","noodles","#FFA500"
-4,"Óleo de Soja","Garrafa de 900ml de óleo de soja.",6.90,"MaterialCommunityIcons","oil","#FFD700"
-5,"Sal","1kg de sal refinado.",2.50,"MaterialCommunityIcons","shaker","#000"
-6,"Açúcar","Pacote de 1kg de açúcar cristal.",4.00,"MaterialCommunityIcons","spoon-sugar","#FFFACD"
-7,"Leite","Litro de leite integral.",4.50,"MaterialCommunityIcons","bottle-soda-classic","#F5F5DC"
-8,"Café","500g de café moído.",10.90,"MaterialCommunityIcons","coffee","#6F4E37"
-9,"Queijo","500g de queijo mussarela fatiado.",18.50,"MaterialCommunityIcons","cheese","#FFD700"
-10,"Ovos","Cartela com 12 ovos brancos.",8.00,"MaterialCommunityIcons","egg","#FFFAF0"
-11,"Frango","1kg de peito de frango congelado.",12.50,"MaterialCommunityIcons","food-drumstick","#FFA500"
-12,"Carne Moída","1kg de carne moída de primeira.",29.90,"MaterialCommunityIcons","food-steak","#A52A2A"
-13,"Sabão Líquido","1L de sabão líquido para roupas.",8.90,"MaterialCommunityIcons","bottle-tonic","#4682B4"
-14,"Shampoo","500ml de shampoo para cabelos normais.",12.50,"MaterialCommunityIcons","spray-bottle","#87CEFA"
-15,"Condicionador","500ml de condicionador hidratante.",13.00,"MaterialCommunityIcons","spray-bottle","#F0E68C"
-16,"Desinfetante","2L de desinfetante para limpeza geral.",5.00,"MaterialCommunityIcons","spray-bottle","#98FB98"
-17,"Detergente","500ml de detergente líquido para louça.",2.00,"MaterialCommunityIcons","bottle-wine","#ADD8E6"
-18,"Creme Dental","90g de creme dental com flúor.",3.50,"MaterialCommunityIcons","tooth","#FFFFFF"
-19,"Papel Higiênico","Pacote com 4 rolos de papel higiênico.",6.90,"FontAwesome5","toilet-paper","#FFFF"
-20,"Sabonete","Caixa com 3 sabonetes de 90g cada.",5.00,"FontAwesome5","soap","#FFB6C1"
-21,"Amaciante","2L de amaciante para roupas deixa suas peças macias e cheirosas.",9.90,"MaterialCommunityIcons","washing-machine","#4682B4"
-22,"Farinha de Trigo",1kg de farinha de trigo. ideal para bolos e pães.,5.50,"MaterialCommunityIcons","food-croissant","#F5DEB3"
-23,"Fermento em Pó","100g de fermento em pó para receitas de bolos e massas.",2.80,"MaterialCommunityIcons","chemical-weapon","#FFD700"
-24,"Creme de Leite",Caixinha de 200g de creme de leite. ótimo para sobremesas.,3.20,"MaterialCommunityIcons","cup-outline","#FFFACD"
-25,"Leite Condensado",395g de leite condensado. ideal para doces e sobremesas.,4.50,"MaterialCommunityIcons","cupcake","#FFD700"
-26,"Molho de Tomate","340g de molho de tomate tradicional.",3.00,"MaterialCommunityIcons","food-variant","#FF6347"
-27,"Extrato de Tomate","Lata de 350g de extrato de tomate concentrado.",4.30,"MaterialCommunityIcons","food-apple","#FF4500"
-28,"Batata","1kg de batata frita.",20.20,"MaterialCommunityIcons","french-fries","#F4A460"
-29,"Cenoura","1kg de cenoura fresca.",4.00,"MaterialCommunityIcons","carrot","#FFA500"
-30,"Tomate","1kg de tomates maduros.",6.50,"MaterialCommunityIcons","food-apple","#FF6347"
-31,"Alface","Unidade de alface fresca.",2.00,"MaterialCommunityIcons","leaf","#32CD32"
-32,"Cebola","1kg de cebolas frescas.",3.80,"MaterialCommunityIcons","food-apple","#FFE4B5"
-33,"Alho","200g de alho fresco.",6.00,"MaterialCommunityIcons","food-apple","#FFFAF0"
-34,"Maçã","1kg de maçãs vermelhas frescas.",7.00,"MaterialCommunityIcons","apple","#FF0000"
-35,"Banana","1kg de bananas prata.",4.50,"MaterialCommunityIcons","food-apple","#FFD700"
-36,"Pão de Forma","Pacote de 450g de pão de forma.",6.80,"MaterialCommunityIcons","bread-slice","#F5DEB3"
-37,"Refrigerante","Garrafa de 2L de refrigerante cola.",7.00,"MaterialCommunityIcons","bottle-soda","#FF4500"
-38,"Suco de Laranja","1L de suco de laranja integral.",8.90,"MaterialCommunityIcons","food-variant","#FFA500"
-39,"Achocolatado","400g de achocolatado em pó.",7.50,"MaterialCommunityIcons","cup","#8B4513"
-40,"Cereal Matinal","500g de cereal matinal de milho.",10.90,"MaterialCommunityIcons","bowl-mix","#F5DEB3"
-41,"Biscoito Recheado","Pacote de 140g de biscoito recheado.",3.20,"MaterialCommunityIcons","cookie","#D2691E"
-42,"Batata Frita","Pacote de 200g de batata frita.",6.50,"MaterialCommunityIcons","food-variant","#FFD700"
-43,"Chocolate","Barra de 100g de chocolate ao leite.",4.00,"MaterialCommunityIcons","food-croissant","#8B4513"
-44,"Chá","Caixa com 15 sachês de chá de camomila.",5.20,"MaterialCommunityIcons","cup-outline","#32CD32"
-45,"Água Mineral","Garrafa de 1.5L de água mineral sem gás.",2.30,"MaterialCommunityIcons","cup","#ADD8E6"
-46,"Vinho","Garrafa de 750ml de vinho tinto seco.",28.00,"MaterialCommunityIcons","glass-wine","#800000"
-47,"Cerveja","Lata de 350ml de cerveja.",3.50,"MaterialCommunityIcons","glass-mug-variant","#FFD700"
-48,"Pipoca de Micro-ondas","Pacote de 100g de pipoca para micro-ondas.",2.90,"MaterialCommunityIcons","food","#F5DEB3"
-49,"Sorvete","Pote de 1L de sorvete de creme.",14.00,"MaterialCommunityIcons","ice-cream","#FFFAF0"
-50,"Pizza Congelada",Pizza congelada de calabresa. 450g.,12.50,"MaterialCommunityIcons","pizza","#FF4500"
+1,Arroz,Pacote de 5kg de arroz branco tipo 1.,19.90,MaterialCommunityIcons,rice,#FFD700
+2,Feijão,Pacote de 1kg de feijão carioca.,7.50,MaterialCommunityIcons,seed,#8B4513
+3,Macarrão,Pacote de 500g de macarrão espaguete.,4.20,MaterialCommunityIcons,noodles,#FFA500
+4,Óleo de Soja,Garrafa de 900ml de óleo de soja.,6.90,MaterialCommunityIcons,oil,#FFD700
+5,Sal,1kg de sal refinado.,2.50,MaterialCommunityIcons,shaker,#000
+6,Açúcar,Pacote de 1kg de açúcar cristal.,4.00,MaterialCommunityIcons,spoon-sugar,#FFFACD
+7,Leite,Litro de leite integral.,4.50,MaterialCommunityIcons,bottle-soda-classic,#F5F5DC
+8,Café,500g de café moído.,10.90,MaterialCommunityIcons,coffee,#6F4E37
+9,Queijo,500g de queijo mussarela fatiado.,18.50,MaterialCommunityIcons,cheese,#FFD700
+10,Ovos,Cartela com 12 ovos brancos.,8.00,MaterialCommunityIcons,egg,#FFFAF0
+11,Frango,1kg de peito de frango congelado.,12.50,MaterialCommunityIcons,food-drumstick,#FFA500
+12,Carne Moída,1kg de carne moída de primeira.,29.90,MaterialCommunityIcons,food-steak,#A52A2A
+13,Sabão Líquido,1L de sabão líquido para roupas.,8.90,MaterialCommunityIcons,bottle-tonic,#4682B4
+14,Shampoo,500ml de shampoo para cabelos normais.,12.50,MaterialCommunityIcons,spray-bottle,#87CEFA
+15,Condicionador,500ml de condicionador hidratante.,13.00,MaterialCommunityIcons,spray-bottle,#F0E68C
+16,Desinfetante,2L de desinfetante para limpeza geral.,5.00,MaterialCommunityIcons,spray-bottle,#98FB98
+17,Detergente,500ml de detergente líquido para louça.,2.00,MaterialCommunityIcons,bottle-wine,#ADD8E6
+18,Creme Dental,90g de creme dental com flúor.,3.50,MaterialCommunityIcons,tooth,#FFFFFF
+19,Papel Higiênico,Pacote com 4 rolos de papel higiênico.,6.90,FontAwesome5,toilet-paper,#FFFF
+20,Sabonete,Caixa com 3 sabonetes de 90g cada.,5.00,FontAwesome5,soap,#FFB6C1
+21,Amaciante,2L de amaciante para roupas deixa suas peças macias e cheirosas.,9.90,MaterialCommunityIcons,washing-machine,#4682B4
+22,Farinha de Trigo,1kg de farinha de trigo. ideal para bolos e pães.,5.50,MaterialCommunityIcons,food-croissant,#F5DEB3
+23,Fermento em Pó,100g de fermento em pó para receitas de bolos e massas.,2.80,MaterialCommunityIcons,chemical-weapon,#FFD700
+24,Creme de Leite,Caixinha de 200g de creme de leite. ótimo para sobremesas.,3.20,MaterialCommunityIcons,cup-outline,#FFFACD
+25,Leite Condensado,395g de leite condensado. ideal para doces e sobremesas.,4.50,MaterialCommunityIcons,cupcake,#FFD700
+26,Molho de Tomate,340g de molho de tomate tradicional.,3.00,MaterialCommunityIcons,food-variant,#FF6347
+27,Extrato de Tomate,Lata de 350g de extrato de tomate concentrado.,4.30,MaterialCommunityIcons,food-apple,#FF4500
+28,Batata,1kg de batata frita.,20.20,MaterialCommunityIcons,french-fries,#F4A460
+29,Cenoura,1kg de cenoura fresca.,4.00,MaterialCommunityIcons,carrot,#FFA500
+30,Tomate,1kg de tomates maduros.,6.50,MaterialCommunityIcons,food-apple,#FF6347
+31,Alface,Unidade de alface fresca.,2.00,MaterialCommunityIcons,leaf,#32CD32
+32,Cebola,1kg de cebolas frescas.,3.80,MaterialCommunityIcons,food-apple,#FFE4B5
+33,Alho,200g de alho fresco.,6.00,MaterialCommunityIcons,food-apple,#FFFAF0
+34,Maçã,1kg de maçãs vermelhas frescas.,7.00,MaterialCommunityIcons,apple,#FF0000
+35,Banana,1kg de bananas prata.,4.50,MaterialCommunityIcons,food-apple,#FFD700
+36,Pão de Forma,Pacote de 450g de pão de forma.,6.80,MaterialCommunityIcons,bread-slice,#F5DEB3
+37,Refrigerante,Garrafa de 2L de refrigerante cola.,7.00,MaterialCommunityIcons,bottle-soda,#FF4500
+38,Suco de Laranja,1L de suco de laranja integral.,8.90,MaterialCommunityIcons,food-variant,#FFA500
+39,Achocolatado,400g de achocolatado em pó.,7.50,MaterialCommunityIcons,cup,#8B4513
+40,Cereal Matinal,500g de cereal matinal de milho.,10.90,MaterialCommunityIcons,bowl-mix,#F5DEB3
+41,Biscoito Recheado,Pacote de 140g de biscoito recheado.,3.20,MaterialCommunityIcons,cookie,#D2691E
+42,Batata Frita,Pacote de 200g de batata frita.,6.50,MaterialCommunityIcons,food-variant,#FFD700
+43,Chocolate,Barra de 100g de chocolate ao leite.,4.00,MaterialCommunityIcons,food-croissant,#8B4513
+44,Chá,Caixa com 15 sachês de chá de camomila.,5.20,MaterialCommunityIcons,cup-outline,#32CD32
+45,Água Mineral,Garrafa de 1.5L de água mineral sem gás.,2.30,MaterialCommunityIcons,cup,#ADD8E6
+46,Vinho,Garrafa de 750ml de vinho tinto seco.,28.00,MaterialCommunityIcons,glass-wine,#800000
+47,Cerveja,Lata de 350ml de cerveja.,3.50,MaterialCommunityIcons,glass-mug-variant,#FFD700
+48,Pipoca de Micro-ondas,Pacote de 100g de pipoca para micro-ondas.,2.90,MaterialCommunityIcons,food,#F5DEB3
+49,Sorvete,Pote de 1L de sorvete de creme.,14.00,MaterialCommunityIcons,ice-cream,#FFFAF0
+50,Pizza Congelada,Pizza congelada de calabresa. 450g.,12.50,MaterialCommunityIcons,pizza,#FF4500
