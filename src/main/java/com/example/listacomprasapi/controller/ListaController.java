@@ -28,17 +28,17 @@ public class ListaController {
         return listaService.findAtiva();
     }
 
-    @GetMapping("/create")
+    @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody ListaComprasModel model ) {
         return listaService.save(model);
     }
 
-    @GetMapping("/add/{id}")
+    @PutMapping("/add/{id}")
     public ResponseEntity<?> add(@RequestBody ProdutoModel model, @PathVariable Long id ) {
         return listaService.addProduto(id,model);
     }
 
-    @GetMapping("/remove/{id}")
+    @PutMapping("/remove/{id}")
     public ResponseEntity<?> remove(@RequestBody ProdutoModel model, @PathVariable Long id ) {
         return listaService.removeProduto(id,model);
     }
