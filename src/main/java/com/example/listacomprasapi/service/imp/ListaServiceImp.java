@@ -72,16 +72,20 @@ public class ListaServiceImp implements ListaService {
     }
 
     @Override
-    public ResponseEntity<?> save(ListaComprasModel listaComprasModel) {
+    public ResponseEntity<?> save(ProdutoModel produtoModel) {
 
         ListaComprasEntity listaComprasEntity = listaCompraRepository.findByStatus(ListaStatus.aberta);
 
 
         if (listaComprasEntity == null) {
-            listaComprasEntity = new ListaComprasEntity(listaComprasModel);
+            listaComprasEntity = new ListaComprasEntity();
+
+            System.out.println(produtoModel);
+            ProdutoEntity produtoEntity = produtoRepository.findById(produtoModel.getId()).orElse(null);
+
+            listaComprasEntity.getListaProduto().add(new ListaProdutoEntity(listaComprasEntity, produtoEntity));
+
             listaCompraRepository.save(listaComprasEntity);
-
-
             return new ResponseEntity<>(new ListaComprasModel(listaComprasEntity), HttpStatus.CREATED);
         } else {
             Map<String, String> errors = new HashMap<>();

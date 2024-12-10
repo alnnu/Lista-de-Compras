@@ -29,7 +29,7 @@ public class ListaController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody ListaComprasModel model ) {
+    public ResponseEntity<?> create(@RequestBody ProdutoModel model ) {
         return listaService.save(model);
     }
 

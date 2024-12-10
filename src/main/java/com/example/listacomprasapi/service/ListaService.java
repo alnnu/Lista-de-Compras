@@ -15,7 +15,7 @@ public interface ListaService {
 
     public ResponseEntity<ListaComprasModel> findAtiva();
 
-    public ResponseEntity<?> save(ListaComprasModel listaComprasModel);
+    public ResponseEntity<?> save(ProdutoModel produto);
 
     public ResponseEntity<?> addProduto(Long listaId, ProdutoModel produtoModel);
 

@@ -1,6 +1,7 @@
 package com.example.listacomprasapi.entity;
 
 import com.example.listacomprasapi.model.ListaComprasModel;
+import com.example.listacomprasapi.model.ProdutoModel;
 import com.example.listacomprasapi.model.emuns.ListaStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,9 +11,9 @@ import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Entity
-@NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class ListaComprasEntity {
@@ -33,4 +34,12 @@ public class ListaComprasEntity {
         listaProduto = new ArrayList<>();
         status = ListaStatus.valueOf("aberta");
     }
+    public ListaComprasEntity() {
+        criacao = new Date();
+        listaProduto = new ArrayList<>();
+        status = ListaStatus.valueOf("aberta");
+    }
+
+
+
 }
